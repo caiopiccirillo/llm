@@ -1,0 +1,10 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+cuda-core = { git = "https://github.com/NVIDIA/cuda-rust", rev = "4514af2ca8a21a9f8feb187567f61fe67090f881", version = "0.2.1" }
+half = "2.7.1"
+kernels-tile = { version = "0.1.0", path = "../kernels-tile" }
+safetensors = "0.8.0"
